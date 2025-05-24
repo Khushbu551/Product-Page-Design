@@ -1,7 +1,6 @@
 let productImg = document.getElementById("productImg");
 let btn = document.getElementsByClassName("btn");
 
-// Image switcher buttons
 btn[0].onclick = function () {
   productImg.src = "images/pic.1.avif";
   for (bt of btn) bt.classList.remove("active");
@@ -18,18 +17,16 @@ btn[2].onclick = function () {
   this.classList.add("active");
 };
 
-//  Buy Now success message
 document.getElementById("buyBtn").onclick = function () {
-  document.getElementById("successMessage").innerText =
-    "Product added successfully!";
+  const msg = document.getElementById("successMessage");
+  msg.innerText = "✅ Product added successfully!";
   setTimeout(() => {
-    document.getElementById("successMessage").innerText = "";
+    msg.innerText = "";
   }, 3000);
 };
 
-//  Countdown Timer for Discount
 let countdownElement = document.getElementById("countdown");
-let timeLeft = 60 * 5; // 5 minutes
+let timeLeft = 60 * 5;
 
 function updateCountdown() {
   let minutes = Math.floor(timeLeft / 60);
