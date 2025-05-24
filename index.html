@@ -20,67 +20,56 @@
         <div class="details">
           <h1>Casual Jeans</h1>
           <h2>$15.00</h2>
-          <h3>30% OFF</h3>
+
+          <!-- ⭐ Stock Status -->
+          <p class="stock">Only 4 left in stock!</p>
+
+          <!-- ⭐ Star Rating -->
+          <p class="rating">Rating: ⭐⭐⭐⭐☆</p>
+
+          <h3 id="discount">30% OFF - Ends in <span id="countdown"></span></h3>
+
           <p>
             Wrangler is an American manufacturer of jeans and other clothing
             items, particularly workwear.
           </p>
+
           <form>
             <div class="size-select">
               <p>Size</p>
-              <label for="small">
-                <input type="radio" name="size" id="small" />
-                <span>S</span>
-              </label>
-
-              <label for="medium">
-                <input type="radio" name="size" id="medium" />
-                <span>M</span>
-              </label>
-
-              <label for="large">
-                <input type="radio" name="size" id="large" />
-                <span>L</span>
-              </label>
-
-              <label for="x-large">
-                <input type="radio" name="size" id="x-large" />
-                <span>XL</span>
-              </label>
-
-              <label for="xx-large">
-                <input type="radio" name="size" id="xx-large" />
-                <span>XXL</span>
-              </label>
+              <label><input type="radio" name="size" /><span>S</span></label>
+              <label><input type="radio" name="size" /><span>M</span></label>
+              <label><input type="radio" name="size" /><span>L</span></label>
+              <label><input type="radio" name="size" /><span>XL</span></label>
+              <label><input type="radio" name="size" /><span>XXL</span></label>
             </div>
 
             <div class="color-select">
               <p>Color</p>
-              <label for="red">
-                <input type="radio" name="color" id="red" />
-                <span class="color-1"></span>
-              </label>
-
-              <label for="green">
-                <input type="radio" name="color" id="green" />
-                <span class="color-2"></span>
-              </label>
-              <label for="blue">
-                <input type="radio" name="color" id="blue" />
-                <span class="color-3"></span>
-              </label>
-              <label for="pink">
-                <input type="radio" name="color" id="pink" />
-                <span class="color-4"></span>
-              </label>
+              <label
+                ><input type="radio" name="color" /><span class="color-1"></span
+              ></label>
+              <label
+                ><input type="radio" name="color" /><span class="color-2"></span
+              ></label>
+              <label
+                ><input type="radio" name="color" /><span class="color-3"></span
+              ></label>
+              <label
+                ><input type="radio" name="color" /><span class="color-4"></span
+              ></label>
             </div>
 
             <div class="quantity-select">
               <p>Quantity</p>
               <input type="number" value="1" />
             </div>
-            <button>Buy Now</button>
+
+            <button type="button" id="buyBtn">Buy Now</button>
           </form>
+
+          <!-- ✅ Success Message -->
+          <p id="successMessage" class="success-msg"></p>
         </div>
       </div>
     </div>
